@@ -1,0 +1,193 @@
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Social</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            background-color: #565771;
+            height: 100vh;
+
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            height: 667px;
+            background-color: #282A41;
+           position: relative;
+            border-radius: 34px;
+            overflow: hidden;
+        }
+        .nav{
+            display: flex;
+            width: 380px; 
+            height: 63px;
+            justify-content: space-evenly;
+            background-color: white;
+            position: absolute;
+            bottom: 0px;
+            align-items: center;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border-bottom: 3px #282A41 solid;
+            border-left: 3px #282A41 solid;
+            border-right: 3px #282A41 solid;
+            border-end-end-radius: 32px;
+            border-end-start-radius: 32px;
+        }
+        .nav label{
+            font-size: 10px;
+            color: #818287;
+            cursor: pointer;
+        }
+        .nav #icon{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="display: flex; color: white; align-items: center; justify-content: space-between;padding: 0 20px;margin-top: 15px;">
+            <label for="" style="font-size: 12px;font-weight:450;">10:15 AM</label>
+            <ion-icon name="wifi-outline"></ion-icon>
+        </div>
+        <div style="display: flex;align-items: center;padding: 2px 20px;margin-top: 15px;margin-bottom: 21px;">
+            <div style="flex-grow: 1;">
+                <label for="" style="color: white;font-weight: 600;font-size: 20px;">Social</label>
+            </div>
+            <div style="position: relative;display: flex; align-items: center;">
+                <img src="/img/bell.png" alt=""">
+                <div style="width: 8px; height: 8px;background-color: #F60000;border-radius: 50%;position: absolute;bottom: 12px;left: 10px;"></div>
+            </div>
+        </div>
+       <div style="display: flex;justify-content: center;align-items: center;">
+            <div style="display: flex;justify-content: space-around; background-color: #3D3F54;width: 308px;height: 36px;border-radius: 32px; align-items: center;">
+                <div style="background-color: none;flex-grow: 1;display: flex;justify-content: center;align-items: center;height: 100%;border-radius: 32px;">
+                    <a href="SocialPost.html"><label for="" style="color: #EDEEFF;font-size: 14px;">Post</label></a>
+                </div>
+                <div style="display: flex; background-color: #EDEEFF;height: 100%;align-items: center;justify-content: center;border-radius: 32px;padding: 0 25px;">
+                   <a href="SocialMessage.html" style="text-decoration: none;font-size: 14px;"> <label for="" >Message</label></a>
+                </div>
+                <div style="background-color: none;flex-grow: 1;display: flex;justify-content: center;align-items: center;height: 100%;border-radius: 32px;">
+                    <a href=""><label for="" style="color: #EDEEFF;font-size: 14px;">Game</label></a>
+                </div>
+            </div>
+       </div>
+
+       <div style="display: flex;margin-top: 24px;justify-content: center; align-items: center; gap:20px">
+            <div style="display: flex;width: 262px;height: 28px;gap: 20px; align-items: center;background-color: #3D3F54;padding: 0 20px;border-radius: 15px;">
+                <ion-icon name="search-outline" style="color: #888080;font-size: 20px;"></ion-icon>
+                <label for="" style="color: #888080;font-size: 10px;">Search</label>
+            </div>
+            <ion-icon name="add-circle-outline" style="color: #EDEEFF;font-size: 20px;"></ion-icon>
+        </div>
+
+        <a href="SocialChat.html" style="text-decoration: none;"><div style="display: flex;margin: 30px 20px 10px 20px;height: 70px; align-items: center;background-color: #3D3F54;border-radius: 10px;">
+            <div style="display: flex;justify-content: space-evenly;flex-grow: 1;padding: 0 20px;align-items: center;">
+                <div style="width: 40px; height: 40px; display: flex;background-color: #D9D9D9;border-radius: 50%;justify-content: center;align-items: center;position: relative;">
+                    <ion-icon name="person-outline" style="font-size: 18px;color: #6C6FD6;"></ion-icon>
+                    <div style="position: absolute;width: 8px;height: 8px; background-color: #179C25;border-radius: 50% ;border: #EDEEFF 1px solid; bottom: 0;right: 2px;"></div>
+                </div>
+                <div style="display: flex;flex-direction: column; justify-content: space-between;margin-left: 20px;flex-grow: 1;height: 40px;">
+                    <label for="" style="font-weight: 400; font-size: 14px;color:#EDEEFF;">Nick</label>
+                    <label for="" style="width: 100px;font-size: 10px;color: #BEC2BE;">Yeah thank, see y...</label>
+                </div>
+                <div style="display: flex;flex-direction: column; justify-content: space-between;align-items: end;height: 40px;">
+                    <label for="" style="font-size: 12px;color:#E3E7ED ;">10:13 AM</label>
+                    <div style="width: 18px;height: 18px;background-color:#F60000;border-radius: 50%;justify-content: center;align-items: center;display: flex;">
+                        <label for="" style="font-size: 10px;color: #BEC2BE;">1</label>
+                    </div>
+                </div>   
+            </div>                                                          
+        </div></a>
+        <div style="display: flex;margin: 12px 20px 10px 20px;height: 70px; align-items: center;background-color: #3D3F54;border-radius: 10px;">
+            <div style="display: flex;justify-content: space-evenly;flex-grow: 1;padding: 0 20px;align-items: center;">
+                <div style="width: 40px; height: 40px; display: flex;background-color: #D9D9D9;border-radius: 50%;justify-content: center;align-items: center;position: relative;">
+                    <ion-icon name="person-outline" style="font-size: 18px;color: #6C6FD6;"></ion-icon>
+                    <div style="position: absolute;width: 8px;height: 8px; background-color: #90928A;border-radius: 50% ;border: #EDEEFF 1px solid; bottom: 0;right: 2px;"></div>
+                </div>
+                <div style="display: flex;flex-direction: column; justify-content: space-between;margin-left: 20px;flex-grow: 1;height: 40px;">
+                    <label for="" style="font-weight: 400; font-size: 14px;color:#EDEEFF;">Ben</label>
+                    <label for="" style="width: 100px;font-size: 10px;color: #BEC2BE;">I will check it on...</label>
+                </div>
+                <div style="display: flex;flex-direction: column; justify-content: space-between;align-items: end;height: 40px;">
+                    <label for="" style="font-size: 12px;color:#E3E7ED ;">9:12 AM</label>
+                    <label for="" style="font-size: 14px;color: #BEC2BE;"><ion-icon name="checkmark-done-outline"></ion-icon></label>
+                </div>   
+            </div>                                                          
+        </div>
+        <div style="display: flex;margin: 12px 20px 10px 20px;height: 70px; align-items: center;background-color: #3D3F54;border-radius: 10px;">
+            <div style="display: flex;justify-content: space-evenly;flex-grow: 1;padding: 0 20px;align-items: center;">
+                <div style="width: 40px; height: 40px; display: flex;background-color: #D9D9D9;border-radius: 50%;justify-content: center;align-items: center;position: relative;">
+                    <ion-icon name="person-outline" style="font-size: 18px;color: #6C6FD6;"></ion-icon>
+                    <div style="position: absolute;width: 8px;height: 8px; background-color: #179C25;border-radius: 50% ;border: #EDEEFF 1px solid; bottom: 0;right: 2px;"></div>
+                </div>
+                <div style="display: flex;flex-direction: column; justify-content: space-between;margin-left: 20px;flex-grow: 1;height: 40px;">
+                    <label for="" style="font-weight: 400; font-size: 14px;color:#EDEEFF;">Christ</label>
+                    <label for="" style="width: 100px;font-size: 10px;color: #BEC2BE;">Ok, i see you at...</label>
+                </div>
+                <div style="display: flex;flex-direction: column; justify-content: space-between;align-items: end;height: 40px;">
+                    <label for="" style="font-size: 12px;color:#E3E7ED ;">7:09 AM</label>
+                    <label for="" style="font-size: 14px;color: #BEC2BE;"><ion-icon name="checkmark-outline"></ion-icon></label>
+
+                </div>   
+            </div>                                                          
+        </div>
+        <div style="display: flex;margin: 12px 20px 10px 20px;height: 70px; align-items: center;background-color: #3D3F54;border-radius: 10px;">
+            <div style="display: flex;justify-content: space-evenly;flex-grow: 1;padding: 0 20px;align-items: center;">
+                <div style="width: 40px; height: 40px; display: flex;background-color: #D9D9D9;border-radius: 50%;justify-content: center;align-items: center;position: relative;">
+                    <ion-icon name="person-outline" style="font-size: 18px;color: #6C6FD6;"></ion-icon>
+                    <div style="position: absolute;width: 8px;height: 8px; background-color: #179C25;border-radius: 50% ;border: #EDEEFF 1px solid; bottom: 0;right: 2px;"></div>
+                </div>
+                <div style="display: flex;flex-direction: column; justify-content: space-between;margin-left: 20px;flex-grow: 1;height: 40px;">
+                    <label for="" style="font-weight: 400; font-size: 14px;color:#EDEEFF;">Connor</label>
+                    <label for="" style="width: 100px;font-size: 10px;color: #BEC2BE;">I will pick it up wh...</label>
+                </div>
+                <div style="display: flex;flex-direction: column; justify-content: space-between;align-items: end;height: 40px;">
+                    <label for="" style="font-size: 12px;color:#E3E7ED ;">Yesterday</label>
+                    <label for="""></label>
+                </div>   
+            </div>                                                          
+        </div>
+
+        
+       
+       
+        <div class="nav">
+            <div style="display: flex;flex-direction: column;align-items: center;gap: 4px;">
+                <a href="Home.html"><label id="icon"><ion-icon name="home"></ion-icon></label></a>
+                <label for="" >Home</label>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;gap: 4px;">
+                <a href="BookDiscover.html"><label id="icon" ><ion-icon name="book"></ion-icon></label></a>
+                <label for="">Book</label>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;gap: 4px;">
+                <a href="Club.html" ><label id="icon" ><ion-icon name="people"></ion-icon></label></a>
+                <label for="" >Club</label>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;gap: 4px;">
+                <a href="SocialMessage.html"><label id="icon" style="color: #0C0D0E;"><ion-icon name="chatbubbles"></ion-icon></label></a>
+                <label for="" style="color: #0C0D0E;">Social</label>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;gap: 4px;">
+                <a href="User.html"><label id="icon"><ion-icon name="people-circle"></ion-icon></label></a>
+                <label for="">Profile</label>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

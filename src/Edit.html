@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Edit</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            background-color: #565771;
+            height: 100vh;
+
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            height: 667px;
+            background-color: #282A41;
+           position: relative;
+            border-radius: 34px;
+            overflow: hidden;
+        }
+        .nav{
+            display: flex;
+            width: 380px; 
+            height: 63px;
+            justify-content: space-evenly;
+            background-color: white;
+            position: absolute;
+            bottom: 0px;
+            align-items: center;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border-bottom: 3px #282A41 solid;
+            border-left: 3px #282A41 solid;
+            border-right: 3px #282A41 solid;
+            border-end-end-radius: 32px;
+            border-end-start-radius: 32px;
+        }
+        .nav label{
+            font-size: 10px;
+            color: #818287;
+            cursor: pointer;
+        }
+        .nav #icon{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="display: flex; color: white; align-items: center; justify-content: space-between;padding: 0 20px;margin-top: 15px;">
+            <label for="" style="font-size: 12px;font-weight:450;">10:15 AM</label>
+            <ion-icon name="wifi-outline"></ion-icon>
+        </div>
+        <div style="display: flex;align-items: center;padding: 2px 40px;margin-top: 13px;margin-bottom: 21px;margin-top: 25px;">
+            <a href="Setting.html" style="text-decoration: none;"><ion-icon name="arrow-back-outline" style="font-size: 22px;color: #EDEEFF;"></ion-icon></a>
+            <div style="flex-grow: 1;display: flex;justify-content: center;">
+                <div style="color: #E3E7ED; font-size: 20px; font-family: Inter; font-weight: 600; word-wrap: break-word">Settings</div>
+            </div>
+            <div style="width: 16px;">
+
+            </div>
+        </div>
+
+        <div style="display: flex;flex-wrap: wrap;margin: 0 20px;justify-content: center;">
+            <div style="display: flex;flex-direction: column;width: 249px; height: 384px; background: #3D3F54; border-radius: 16px;margin-top: 15px;padding: 20px 20px;position: relative;">
+                <div style="color: #E3E7ED; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Profile Settings</div>
+                <div style="display: flex;justify-content: center; align-items: center;margin-top: 13px;">
+                    <div style="display: flex;flex-direction: column;gap: 3px;">
+                        <div style="display: flex;justify-content: center;align-items: center;width: 50px; height: 50px; background: #D9D9D9; border-radius: 9999px">
+                            <ion-icon name="person-outline" style="color: #6C6FD6;font-size: 24px;"></ion-icon>
+                        </div>
+                        <div style="color: #75787B; font-size: 8px; font-family: Inter; font-weight: 600; word-wrap: break-word">Change Photo</div>
+                    </div>
+                </div>
+                <div style="margin-top: 7px;color: #E3E7ED; font-size: 10px; font-family: Inter; font-weight: 500; word-wrap: break-word">Username / ID</div>
+                <div style="display: flex;justify-content: space-between;margin-top: 12px;">
+                    <div style="display: flex;justify-content: start;align-items: center;width: 133px; height: 18px; background: #595B70; border-radius: 10px">
+                        <div style="margin-left: 10px;color: #8F9296; font-size: 8px; font-family: Inter; font-weight: 600; word-wrap: break-word">Enter your name</div>
+                    </div>
+                    <div style="display: flex;justify-content: start;align-items: center;width: 98px; height: 18px; background: #595B70; border-radius: 10px">
+                        <div style="margin-left: 10px;color: #8F9296; font-size: 8px; font-family: Inter; font-weight: 600; word-wrap: break-word">Enter your ID</div>
+                    </div>
+                </div>
+                <div style="margin-top: 12px;color: #E3E7ED; font-size: 10px; font-family: Inter; font-weight: 500; word-wrap: break-word">Date of Birth</div>
+                <div style="display: flex;margin-top: 12px;">
+                    <div style="display: flex;justify-content: space-around;align-items: center;width: 35px; height: 18px; background: #595B70; border-radius: 10px">
+                        <div style="position: relative;width: 5px; color: #E3E7ED; font-size: 10px; font-family: Inter; font-weight: 500; word-wrap: break-word">
+                                <label for="" style="position: relative;left: 4px;">1</label>
+                        </div>
+                        <ion-icon name="chevron-down-outline" style="font-size: 12px;color: #CACACA;"></ion-icon>
+                    </div>
+                    <div style="margin-left: 14px;display: flex;justify-content: space-around;align-items: center;width: 84px; height: 18px; background: #595B70; border-radius: 10px">
+                        <div style="position: relative;color: #E3E7ED; font-size: 10px; font-family: Inter; font-weight: 500; word-wrap: break-word">
+                            <label for="" style="position: relative;left: 6px;">January</label></div>
+                        <ion-icon name="chevron-down-outline" style="font-size: 12px;color: #CACACA;"></ion-icon>
+                    </div>
+                    <div style="margin-left: 14px;display: flex;justify-content: space-around;align-items: center;width: 62px; height: 18px; background: #595B70; border-radius: 10px">
+                        <div style="position: relative;;color: #E3E7ED; font-size: 10px; font-family: Inter; font-weight: 500; word-wrap: break-word">
+                            <label for="" style="position: relative;left: 5px;">2000</label>
+                        </div>
+                        <ion-icon name="chevron-down-outline" style="font-size: 12px;color: #CACACA;"></ion-icon>
+                    </div>
+                    
+                </div>
+                <div style="margin-top: 10px;color: #E3E7ED; font-size: 10px; font-family: Inter; font-weight: 500; word-wrap: break-word">School / University</div>
+                <div style="margin-top: 10px;display: flex;align-items: center;width: 243px; height: 18px; background: #595B70; border-radius: 10px">
+                    <div style="margin-left: 10px;color: #E3E7ED; font-size: 8px; font-family: Inter; font-weight: 600; word-wrap: break-word">Institute of Technology of Cambodia</div>
+                </div>
+                <div style="margin-top: 11px;color: #E3E7ED; font-size: 10px; font-family: Inter; font-weight: 500; word-wrap: break-word">Department Information</div>
+                <div style="margin-top: 11px;display: flex;">
+                    <div style="display: flex;justify-content: space-evenly;align-items: center;width: 45px; height: 18px; background: #595B70; border-radius: 10px">
+                        <div style="color: #E3E7ED; font-size: 8px; font-family: Inter; font-weight: 600; word-wrap: break-word">GIC</div>
+                        <ion-icon name="chevron-down-outline" style="font-size: 12px;color: #CACACA;"></ion-icon>
+                    </div>
+                    <div style="display: flex;justify-content: space-evenly;align-items: center;margin-left: 14px;width: 60px; height: 18px; background: #595B70; border-radius: 10px">
+                        <div style="display: flex;align-items: center;padding-left: 8px;background-color: #676878;border-top-left-radius: 10px;border-bottom-left-radius: 10px;width: 100%;height: 100%;color: #E3E7ED; font-size: 8px; font-family: Inter; font-weight: 600; word-wrap: break-word;">Year </div>
+                        <div style="display: flex;align-items: center;justify-content: space-evenly;">
+                            <div style="margin:0px 3px 0px 5px;color: #E3E7ED; font-size: 8px; font-family: Inter; font-weight: 600; word-wrap: break-word">3</div>
+                            <ion-icon name="chevron-down-outline" style="margin-right: 4px;font-size: 12px;color: #CACACA;"></ion-icon>
+                        </div>
+                    </div>
+                    <div style="display: flex;align-items: center;margin-left: 14px;width: 120px; height: 18px; background: #595B70; border-radius: 10px">
+                        <div style="margin-left: 10px;color: #8F9296; font-size: 8px; font-family: Inter; font-weight: 600; word-wrap: break-word">Enter your Class room</div>
+                    </div>
+                </div>
+                <div style="color: #E3E7ED; font-size: 10px; font-family: Inter; font-weight: 500; word-wrap: break-word;margin-top: 11px;">Phone Number</div>
+                <div style="margin-top: 11px;display: flex;align-items: center;width: 243px; height: 18px; background: #595B70; border-radius: 10px">
+                    <div style="margin-left: 10px;color: #8F9296; font-size: 8px; font-family: Inter; font-weight: 600; word-wrap: break-word">Enter your phone number</div>
+                </div>
+                <div style="display: flex;justify-content: space-between;margin-top: 10px;position: relative;">
+                    <a href="Setting.html" style="text-decoration: none;"><div style="position: relative;top: 5px;display: flex;justify-content: center;align-items: center;width: 54px; height: 22px; background: #ACA9BB; border-radius: 10px;">
+                        <div style="text-align: center; color: white; font-size: 10px; font-family: Inter; font-weight: 600; word-wrap: break-word">Cancel</div>
+                    </div></a>
+                    <div style="position: relative;top: 5px;display: flex;justify-content: center;align-items: center;width: 56px; height: 22px; background: #009AD8; border-radius: 10px;">
+                        <div style="text-align: center; color: white; font-size: 10px; font-family: Inter; font-weight: 600; word-wrap: break-word">Update</div>
+                    </div>
+                </div>
+            </div>  
+            <div style="display: flex;flex-direction: column;width: 249px; height: 295px; background: #3D3F54; border-radius: 16px;margin-top: 20px;padding: 15px 20px;">
+                <div style="display: flex;align-items: center;justify-content: space-between;margin-top: 6px;">
+                    <div style="color: #E3E7ED; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Account Setting</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav">
+            <div style="display: flex;flex-direction: column;align-items: center;">
+                <a href="Home.html"><label id="icon" ><ion-icon name="home"></ion-icon></label></a>
+                <label for="" >Home</label>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;">
+                <a href="BookDiscover.html"><label id="icon"><ion-icon name="book"></ion-icon></label></a>
+                <label for="">Book</label>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;">
+                <a href="Club.html"><label id="icon"><ion-icon name="people"></ion-icon></label></a>
+                <label for="">Club</label>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;">
+                <a href="SocialMessage.html"><label id="icon"><ion-icon name="chatbubbles"></ion-icon></label></a>
+                <label for="">Social</label>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;">
+                <a href="User.html"><label id="icon" style="color: #0C0D0E;"><ion-icon name="people-circle"></ion-icon></label></a>
+                <label for="" style="color: #0C0D0E;">Profile</label>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

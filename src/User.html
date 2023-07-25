@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>User</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            background-color: #565771;
+            height: 100vh;
+
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            height: 667px;
+            background-color: #282A41;
+           position: relative;
+            border-radius: 34px;
+            overflow: hidden;
+        }
+        .nav{
+            display: flex;
+            width: 380px; 
+            height: 63px;
+            justify-content: space-evenly;
+            background-color: white;
+            position: absolute;
+            bottom: 0px;
+            align-items: center;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border-bottom: 3px #282A41 solid;
+            border-left: 3px #282A41 solid;
+            border-right: 3px #282A41 solid;
+            border-end-end-radius: 32px;
+            border-end-start-radius: 32px;
+        }
+        .nav label{
+            font-size: 10px;
+            color: #818287;
+            cursor: pointer;
+        }
+        .nav #icon{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="display: flex; color: white; align-items: center; justify-content: space-between;padding: 0 20px;margin-top: 15px;">
+            <label for="" style="font-size: 12px;font-weight:450;">10:15 AM</label>
+            <ion-icon name="wifi-outline"></ion-icon>
+        </div>
+        <div style="display: flex;align-items: center;padding: 2px 20px;margin-top: 13px;margin-bottom: 21px;margin-top: 25px;">
+            <ion-icon name="menu-outline" style="font-size: 22px;color: #EDEEFF;"></ion-icon>
+            <div style="flex-grow: 1;display: flex;justify-content: center;">
+                <div style="color: #E3E7ED; font-size: 20px; font-family: Inter; font-weight: 600; word-wrap: break-word">Profile</div>
+            </div>
+            <div style="position: relative;display: flex; align-items: center;">
+                <a href="Setting.html"><ion-icon name="settings-outline" style="font-size: 22px;color: #EDEEFF;"></ion-icon></a>
+            </div>
+        </div>
+
+        <div style="display: flex;flex-direction: column;margin: 0 20px;align-items: center;gap: 4px;">
+            <div style="width: 48px; height: 48px; background: #D9D9D9; border-radius: 9999px;display: flex;justify-content: center;align-items: center;">
+                <ion-icon name="person-outline" style="color: #6C6FD6;font-size: 22px;"></ion-icon>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;">
+                <div style="color: #E3E7ED; font-size: 16px; font-family: Inter; font-weight: 600; word-wrap: break-word">John</div>
+                <div style="color: #75787B; font-size: 10px; font-family: Inter; font-weight: 600; word-wrap: break-word">#e2020000</div>
+            </div>
+        </div>
+        <div style="display: flex;flex-wrap: wrap;margin: 0 20px;justify-content: center;">
+            <div style="display: flex;flex-direction: column;width: 249px; height: 295px; background: #3D3F54; border-radius: 16px;margin-top: 15px;padding: 15px 20px;">
+                <div style="display: flex;justify-content: space-between;align-items: center;color: #E3E7ED; font-size: 15px; font-family: Inter; font-weight: 700; position: relative;">
+                    <label for="">Information</label>
+                    
+                </div>
+                <div style="display: flex;flex-direction: column;border-top: 0.50px rgba(194.44, 169.32, 169.32, 0.35) solid;margin-top: 15px;padding-top: 7px;gap:4px ;">
+                    <div style="color: #E3E7ED; font-size: 10px; font-family: Inter; font-weight: 600; word-wrap: break-word">School / University</div>
+                    <div style="color: #B8BCC2; font-size: 10px; font-family: Inter; font-weight: 600; word-wrap: break-word">Institute of Technology of Cambodia</div>
+                </div>
+                <div style="display: flex;flex-direction: column;border-top: 0.50px rgba(194.44, 169.32, 169.32, 0.35) solid;margin-top: 8px;padding-top: 7px;gap:4px ;">
+                    <div style="color: #E3E7ED; font-size: 10px; font-family: Inter; font-weight: 600; word-wrap: break-word">Department</div>
+                    <div style="color: #B8BCC2; font-size: 10px; font-family: Inter; font-weight: 600; word-wrap: break-word">Information and Communication Engineering</div>
+                </div>
+                <div style="display: flex;flex-direction: column;border-top: 0.50px rgba(194.44, 169.32, 169.32, 0.35) solid;margin-top: 8px;padding-top: 7px;gap:4px ;">
+                    <div style="color: #E3E7ED; font-size: 10px; font-family: Inter; font-weight: 600; word-wrap: break-word">Education Level</div>
+                    <div style="color: #B8BCC2; font-size: 10px; font-family: Inter; font-weight: 600; word-wrap: break-word">3rd Year</div>
+                </div>
+                <div style="display: flex;flex-direction: column;border-top: 0.50px rgba(194.44, 169.32, 169.32, 0.35) solid;margin-top: 8px;padding-top: 7px;gap:4px ;">
+                    <div style="color: #E3E7ED; font-size: 10px; font-family: Inter; font-weight: 600; word-wrap: break-word">Date of Birth</div>
+                    <div style="color: #B8BCC2; font-size: 10px; font-family: Inter; font-weight: 600; word-wrap: break-word">01/01/2000</div>
+                </div>
+                <div style="display: flex;flex-direction: column;border-top: 0.50px rgba(194.44, 169.32, 169.32, 0.35) solid;margin-top: 8px;padding-top: 7px;gap:4px ;">
+                    <div style="color: #E3E7ED; font-size: 10px; font-family: Inter; font-weight: 600; word-wrap: break-word">Class</div>
+                    <div style="color: #B8BCC2; font-size: 10px; font-family: Inter; font-weight: 600; word-wrap: break-word">F404</div>
+                </div>
+                <div style="display: flex;flex-direction: column;border-top: 0.50px rgba(194.44, 169.32, 169.32, 0.35) solid;margin-top: 8px;padding-top: 7px;gap:4px ;">
+                    <div style="color: #E3E7ED; font-size: 10px; font-family: Inter; font-weight: 600; word-wrap: break-word">Phone Number</div>
+                    <div style="color: #B8BCC2; font-size: 10px; font-family: Inter; font-weight: 600; word-wrap: break-word">0123456789</div>
+                </div>
+            </div>  
+            <div style="display: flex;flex-direction: column;width: 249px; height: 295px; background: #3D3F54; border-radius: 16px;margin-top: 27px;padding: 15px 20px;">
+                <div style="display: flex;align-items: center;justify-content: space-between;">
+                    <div style="color: #E3E7ED; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Friend(257)</div>
+                    <div style="color: #E3E7ED; font-size: 10px; font-family: Inter; font-weight: 400; word-wrap: break-word">See All</div>
+                </div>
+            </div>
+            
+                   
+        </div>
+        
+        <div class="nav">
+            <div style="display: flex;flex-direction: column;align-items: center;">
+                <a href="Home.html"><label id="icon" ><ion-icon name="home"></ion-icon></label></a>
+                <label for="" >Home</label>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;">
+                <a href="BookDiscover.html"><label id="icon"><ion-icon name="book"></ion-icon></label></a>
+                <label for="">Book</label>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;">
+                <a href="Club.html"><label id="icon"><ion-icon name="people"></ion-icon></label></a>
+                <label for="">Club</label>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;">
+                <a href="SocialMessage.html"><label id="icon"><ion-icon name="chatbubbles"></ion-icon></label></a>
+                <label for="">Social</label>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;">
+                <a href="User.html"><label id="icon" style="color: #0C0D0E;"><ion-icon name="people-circle"></ion-icon></label></a>
+                <label for="" style="color: #0C0D0E;">Profile</label>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>HomeScreen</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            background-color: #565771;
+            height: 100vh;
+
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            height: 667px;
+            background-color: #282A41;
+           position: relative;
+            border-radius: 34px;
+            overflow: hidden;
+        }
+        .nav{
+            display: flex;
+            width: 380px; 
+            height: 63px;
+            justify-content: space-evenly;
+            background-color: white;
+            position: absolute;
+            bottom: 0px;
+            align-items: center;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border-bottom: 3px #282A41 solid;
+            border-left: 3px #282A41 solid;
+            border-right: 3px #282A41 solid;
+            border-end-end-radius: 32px;
+            border-end-start-radius: 32px;
+        }
+        .nav label{
+            font-size: 10px;
+            color: #818287;
+            cursor: pointer;
+        }
+        .nav #icon{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="display: flex; color: white; align-items: center; justify-content: space-between;padding: 0 20px;margin-top: 15px;">
+            <label for="" style="font-size: 12px;font-weight:450;">10:15 AM</label>
+            <ion-icon name="wifi-outline"></ion-icon>
+        </div>
+        <div style="display: flex;align-items: center;padding: 2px 20px;margin-top: 13px;margin-bottom: 21px;">
+            <div style="width: 48px; height: 48px; display: flex;background-color: #D9D9D9;border-radius: 50%;justify-content: center;align-items: center;">
+                <ion-icon name="person-outline" style="font-size: 24px;color: #6C6FD6;"></ion-icon>
+            </div>
+            <div style="flex-grow: 1;margin-left: 15px;">
+                <label for="" style="color: white;font-weight: 600;font-size: 16px;">Welcome Back, John!</label>
+            </div>
+            <div style="position: relative;display: flex; align-items: center;">
+                <img src="/img/bell.png" alt=""">
+                <div style="width: 8px; height: 8px;background-color: #F60000;border-radius: 50%;position: absolute;bottom: 12px;left: 10px;"></div>
+            </div>
+        </div>
+        <label for="" style="color: white;font-weight: 600;font-size: 16px;margin-left: 20px;">Upcoming Class</label>
+        <div style="display: flex;margin-top: 17px;margin-left: 20px;gap: 20px;">
+            <div style="display: flex;flex-direction: column ;border-radius: 10px;background-color: #47361B;justify-content: center;padding: 10px 15px;">
+                <img src="/img/cover1.png" alt="" style="width: 107px;height: 107px;border-radius: 5%;">
+                <div style="flex-direction: column;display: flex;font-size: 12px;gap: 4px;margin-top: 5px;">
+                    <label for="" style="color: #999393;font-weight: 600">Monday <ion-icon name="ellipse-outline" style="font-size: 8px;"></ion-icon> 1 PM</label>
+                    <label for="" style="color: #E3E7ED; font-weight: 600;">France</label>
+                    <label for="" style="color: #B6B9BD;font-size: 10px;margin-top: 2px;font-weight: 400;">Class A303</label>
+                </div>
+            </div>
+            <div style="display: flex;flex-direction: column ;border-radius: 10px;background-color: #47361B;justify-content: center;padding: 10px 15px;">
+                <img src="/img/cover2.png" alt="" style="width: 107px;height: 107px;">
+                <div style="flex-direction: column;display: flex;font-size: 12px;gap: 4px;margin-top: 5px;">
+                    <label for="" style="color: #999393;font-weight: 600">Monday <ion-icon name="ellipse-outline" style="font-size: 8px;"></ion-icon> 3 PM</label>
+                    <label for="" style="color: #E3E7ED; font-weight: 600;">Database</label>
+                    <label for="" style="color: #B6B9BD;font-size: 10px;margin-top: 2px;font-weight: 400;">Microsoft Team</label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex;justify-content: space-between;padding: 0 20px;margin-top: 41px;color: #E3E7ED;align-items: end;">
+            <label for="" style="font-size: 16px;font-weight: 600;">All your Course</label>
+            <label for="" style="font-size: 10px;font-weight: 450;">View more</label>
+        </div>
+        <div style="display: flex;flex-direction: column;margin: 0 20px;margin-top: 24px;gap:30px">
+            <div style="display: flex; color: white;align-items: center;gap: 23px;">
+                <label for="" style="font-size: 16px;font-weight: 6000;">1. </label>
+                <div style="display: flex;flex-grow: 1; gap: 10px;">
+                    <img src="/img/cover3.png" alt="" style="width: 45px;height: 45px;">
+                    <div style="display: flex;flex-direction: column;justify-content: space-between;">
+                        <label for="" style="font-size: 14px;font-weight: bold;">Object-Oriented Programming</label>
+                        <label for="" style="color: #999393;font-weight: 600;font-size: 12px;">Monday <ion-icon name="ellipse-outline" style="font-size: 8px;"></ion-icon> 7 AM</label>
+                    </div>
+                </div>
+                <ion-icon name="chevron-forward-outline" style="color: #EDEEFF;font-size: 10px;"></ion-icon>
+            </div>
+            <div style="display: flex; color: white;align-items: center;gap: 20px;">
+                <label for="" style="font-size: 16px;font-weight: 6000;">2. </label>
+                <div style="display: flex;flex-grow: 1; gap: 10px;">
+                    <img src="/img/cover1.png" alt="" style="width: 45px;height: 45px;">
+                    <div style="display: flex;flex-direction: column;justify-content: space-between;">
+                        <label for="" style="font-size: 14px;font-weight: bold;">France</label>
+                        <label for="" style="color: #999393;font-weight: 600;font-size: 12px;">Monday <ion-icon name="ellipse-outline" style="font-size: 8px;"></ion-icon> 1 PM</label>
+                    </div>
+                </div>
+                <ion-icon name="chevron-forward-outline" style="color: #EDEEFF;font-size: 10px;"></ion-icon>
+            </div>
+            <div style="display: flex; color: white;align-items: center;gap: 20px;">
+                <label for="" style="font-size: 16px;font-weight: 6000;">3. </label>
+                <div style="display: flex;flex-grow: 1; gap: 10px;">
+                    <img src="/img/cover2.png" alt="" style="width: 45px;height: 45px;">
+                    <div style="display: flex;flex-direction: column;justify-content: space-between;">
+                        <label for="" style="font-size: 14px;font-weight: bold;">Database</label>
+                        <label for="" style="color: #999393;font-weight: 600;font-size: 12px;">Monday <ion-icon name="ellipse-outline" style="font-size: 8px;"></ion-icon> 3 PM</label>
+                    </div>
+                </div>
+                <ion-icon name="chevron-forward-outline" style="color: #EDEEFF;font-size: 10px;"></ion-icon>
+            </div>
+        </div>
+        <div class="nav">
+            <div style="display: flex;flex-direction: column;align-items: center;">
+                <a href="Home.html"><label id="icon" style="color: #0C0D0E;"><ion-icon name="home"></ion-icon></label></a>
+                <label for="" style="color: #0C0D0E;">Home</label>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;">
+                <a href="BookDiscover.html"><label id="icon"><ion-icon name="book"></ion-icon></label></a>
+                <label for="">Book</label>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;">
+                <a href="Club.html"><label id="icon"><ion-icon name="people"></ion-icon></label></a>
+                <label for="">Club</label>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;">
+                <a href="SocialMessage.html"><label id="icon"><ion-icon name="chatbubbles"></ion-icon></label></a>
+                <label for="">Social</label>
+            </div>
+            <div style="display: flex;flex-direction: column;align-items: center;">
+                <a href="User.html"><label id="icon"><ion-icon name="people-circle"></ion-icon></label></a>
+                <label for="">Profile</label>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
