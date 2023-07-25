@@ -54,6 +54,15 @@
         .nav #icon{
             font-size: 20px;
         }
+
+        .hovers img{
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .hovers img:hover{
+            transform: scale(0.8);
+        }
     </style>
 </head>
 <body>
@@ -87,14 +96,14 @@
                 <ion-icon name="search-outline" style="color: white;font-size: 20px;"></ion-icon>
             </div>
        </div>
-        <div style="display: flex;justify-content: space-between;padding: 0 20px;margin-top: 27px;color: #E3E7ED;align-items: center;">
+        <div class="la" style="display: flex;justify-content: space-between;padding: 0 20px;margin-top: 27px;color: #E3E7ED;align-items: center;">
             <div style="display: flex; gap: 5px;align-items: center;">
                 <ion-icon name="star-outline" style="font-size: 14px;"></ion-icon>
                 <label for="" style="font-size: 12px;font-weight: 600;">Trending</label>
             </div>
             <label for="" style="font-size: 10px;font-weight: 450;">View more</label>
         </div>
-        <div style="display: flex;margin: 0 20px;margin-top: 24px;gap:20px">
+        <div class="hovers" style="display: flex;margin: 0 20px;margin-top: 24px;gap:20px">
             <img src="/img/bookcover1.png" alt="">
             <a href="BookMarket.html"><img src="/img/bookcover2.png" alt=""></a>
             <img src="/img/bookcover3.png" alt="">
